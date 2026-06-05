@@ -1,4 +1,4 @@
-# LotusCut V1
+# LotusCut
 
 ![LotusCut Logo](./assets/icon.png)
 
