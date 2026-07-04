@@ -1,93 +1,80 @@
+<div align="center">
+
+<img src="./assets/icon.png" alt="LotusCut" width="120" />
+
 # LotusCut
-![LotusCut Logo](./assets/icon.png)
-### Video editing as easy as editing a document.
 
-LotusCut is a professional-grade desktop application that transforms your videos into editable text. By syncing transcripts to the video timeline, it lets you edit footage by simply deleting or moving text — then takes you all the way to finished, captioned, vertical clips ready to post.
+### A real video editor with a transcript brain — CapCut-simple, DaVinci-grade, 100% offline.
 
----
-
-## 🌟 What is LotusCut?
-
-LotusCut is a powerful Non-Linear Editor (NLE) built for the AI era. Instead of scrubbing through hours of footage manually, LotusCut uses **OpenAI's Whisper** to transcribe your media entirely offline. Once transcribed, you cut your video exactly like you edit a word document — delete a sentence from the transcript, and the matching video segment is instantly removed.
-
-V2 expands LotusCut from a text-based cutting tool into a complete short-form content studio — add captions, reframe to vertical, and export — all without your media ever leaving your machine.
-
-### Core Workflows
-
-| Feature | Description |
-|---|---|
-| 📝 **Text-Based Editing** | Import local files (MP4, MKV, MOV) and edit via the transcript |
-| 📺 **YouTube Integration** | Paste a link to transcribe and edit YouTube videos directly |
-| ✂️ **Auto-Editor** | Automatically strips long pauses and silence using intelligent dead-air detection |
-| 💬 **Auto-Captions** | Burn animated, styled captions — 6 trending styles with custom fonts, colors, word-by-word highlighting, and auto emoji/clipart |
-| 🎬 **Clip Builder** | Turn one landscape clip into a 9:16 vertical video with drag crop boxes, timeline trimming, and live preview |
+</div>
 
 ---
 
-## 🎯 Who is this for?
+LotusCut is a professional multi-track video editor for Windows that pairs a full timeline with an AI transcript engine. Cut by dragging clips on the timeline like DaVinci Resolve, *or* cut by crossing out words in the transcript like editing a document — and move your work between the two anytime. Every bit of AI runs locally on your machine. Nothing is ever uploaded.
 
-LotusCut was designed specifically for creators who need to move fast:
+## ✨ What you can do
 
-*   **YouTubers & Content Creators** — Quickly trim talking-head videos or podcast clips
-*   **Podcasters** — Find specific quotes or segments in long-form recordings instantly
-*   **Shorts / Reels / TikTok Creators** — Reframe to vertical and caption clips in minutes
-*   **Editors** — Draft rough cuts in minutes before moving to high-level grading
-*   **Social Media Managers** — Extract highlights and clips from long streams or meetings
+**Two ways to edit — one project**
+- **Transcript editor** — your footage becomes a script. Strike a word and the matching video is trimmed; click again to bring it back. Nothing is ever destroyed.
+- **Multi-track Video Editor** — drag, split (S), blade (B), snap and arrange clips across video, audio and text tracks, with markers, keyframes and undo/redo everywhere.
 
----
+**A full timeline**
+- Select / Blade / Snapping tools, ripple-free magnetic reordering, zoom-to-fit, safe-zone guides
+- A **Media Pool** with folders and hover-scrub thumbnails — drag & drop media straight in
+- Start a project without picking a video first: just name it and set a resolution & frame rate (DaVinci-style format settings)
 
-## 📥 Getting Started
+**Built-in production tools**
+- **Auto-captions** burned in from the transcript, with bundled caption fonts
+- **9:16 / 1:1 reframing** for TikTok, Reels and Shorts
+- **Color & LUTs** — cinematic grades with adjustable intensity
+- **Effect Packs** — transitions, lower-thirds and text templates
+- **Chroma Key (green screen)** — color picker, intensity and shadow controls (no AI, fully manual)
+- **Audio** tools and speed controls
+- **Social export** with a cover-image selector
 
-LotusCut runs as a standalone installer for Windows.
+## 🧠 Powered by local AI
 
-1.  **Download:** Head to the [Official Releases](https://github.com/EvolvedLotus/LotusCut/releases) page and download `LotusCut-Setup-2.0.0.exe`.
-2.  **Install:** Run the setup wizard on your Windows machine.
-3.  **Setup AI Engine:** On the first launch, the app automatically configures the local AI engine. You'll see a progress bar for *"Setting up AI Engine"* — this ensures the models run optimally on your specific CPU/GPU.
-4.  **Sign in *(optional)*:** Create a free account to unlock 5 Auto-Captions and 5 Clip Builder renders each month. Core text-based editing, YouTube import, and Auto-Editor are always free and unlimited.
+Transcription runs on **OpenAI Whisper** with **PyTorch**, executing entirely on your CPU. The Whisper model, the Python runtime, and every dependency ship **inside the installer** — so on a brand-new PC there is nothing to download and nothing to configure.
 
----
+## 🔒 Privacy by default
 
-## 💎 Free vs. Growth Insider
+- **100% offline AI.** Your audio, video and transcripts never leave your machine.
+- **No account required to edit.** Sign-in only unlocks premium features.
+- **Sandboxed.** Built on Electron with native security isolation.
 
-| | Free *(signed in)* | Growth Insider |
-|---|---|---|
-| Text-Based Editing | ✅ Unlimited | ✅ Unlimited |
-| YouTube Import | ✅ Unlimited | ✅ Unlimited |
-| Auto-Editor | ✅ Unlimited | ✅ Unlimited |
-| Auto-Captions | 5 / month | ✅ Unlimited |
-| Clip Builder | 5 / month | ✅ Unlimited |
-| All Styles, Fonts & Clipart | — | ✅ |
+## 📥 Getting started
 
-👉 **[Upgrade to Growth Insider](https://tools.evolvedlotus.com/premium)** to unlock unlimited everything.
+LotusCut ships as a single Windows installer that bundles **everything** — ffmpeg, the embedded Python + Whisper + PyTorch runtime, the Microsoft VC++ runtime, the Whisper model, caption fonts and effect packs.
 
----
+1. **Download** the latest `LotusCut-Setup-3.0.0.exe` from the [Releases](https://github.com/EvolvedLotus/LotusCut/releases) page.
+2. **Run** the setup wizard. It installs the VC++ runtime silently if your PC needs it — no other setup, no waiting on downloads.
+3. **Launch** and start editing. A short guided tour walks you through both editing modes on first run.
 
-## 🛠️ Security & Privacy
+> **Fresh PC?** That's the point. A clean Windows machine — even offline after download — works right out of the box.
 
-Privacy is not an afterthought — it's the default.
+## 🎯 Who it's for
 
-*   **100% Offline AI:** All transcription, captioning, and rendering happen on your hardware. We never upload your audio, video, or data to any cloud.
-*   **Sandboxed Environment:** Built on Electron with native security isolation, keeping the app secure and isolated from your system files.
+- **YouTubers & content creators** cutting talking-head videos and podcast clips fast
+- **Podcasters** finding quotes and trimming long-form recordings by searching the transcript
+- **Editors** drafting rough cuts in minutes before a high-end grade
+- **Social media managers** pulling vertical highlights out of long streams and meetings
 
----
+## 💬 Support & community
 
-## 💬 Support & Community
-
-If you encounter any issues or have ideas for future versions, we want to hear from you.
-
-*   **GitHub Issues:** For bug reports and technical crashes, [open a ticket here](https://github.com/EvolvedLotus/LotusCut/issues).
-*   **Discord:** Join the **EvolvedLotus Discord Community** for real-time support, workflow tips, and beta discussions.
-
----
+- **Discord** — join the **EvolvedLotus** community for support, tips and beta discussion: [discord.gg/fHAexMYhCX](https://discord.gg/fHAexMYhCX)
+- **GitHub Issues** — report bugs and crashes [here](https://github.com/EvolvedLotus/LotusCut/issues)
 
 ## 🌐 Connect with EvolvedLotus
 
-Help us build the future of AI-powered creative tools.
-
-*   **Blog:** [blog.evolvedlotus.com](https://blog.evolvedlotus.com)
-*   **Official Website:** [evolvedlotus.com](https://evolvedlotus.com)
-*   **X (Twitter):** [@EvolvedLotus](https://x.com/EvolvedLotus)
+- **Website** — [evolvedlotus.com](https://www.evolvedlotus.com/)
+- **Blog** — [blog.evolvedlotus.com](https://blog.evolvedlotus.com/)
+- **Content Tools** — [tools.evolvedlotus.com](https://tools.evolvedlotus.com/)
+- **X (Twitter)** — [@EvolvedLotus](https://x.com/EvolvedLotus)
 
 ---
 
-*© 2026 EvolvedLotus. Empowering creators with intelligent tools.*
+<div align="center">
+
+*© 2026 EvolvedLotus. Empowering creators with intelligent, offline-first tools.*
+
+</div>
